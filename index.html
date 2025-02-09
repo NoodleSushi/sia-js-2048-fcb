@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <meta property="og:title" content="I coded a game with Zuitt!" />
+    <!-- Provides a brief description of your webpage that will be displayed beneath the title in a social media post. -->
+    <meta property="og:description" content="This Game Development project is powered by Zuitt Coding Bootcamp" />
+    <!-- Specifies the name of the website or the brand associated with the content. This helps identify the source of the content in social media posts. -->
+    <meta property="og:site_name" content="I coded a game with Zuitt!" />
+    <!-- Defines the URL of an image that will be shown alongside the title and description when your webpage is shared. (thumbnail) -->
+    <meta property="og:image" content="[your-deployment-link]/images/story-thumbnail-2048.jpg" />
+    <!-- This ensures the image is accessible over a secure connection, which is important for platforms that require HTTPS. -->
+    <meta property="og:image:secure_url" content="[your-deployment-link]" />
+
+    <title>2048</title>
+
+    <!-- Link of CSS file -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>2048</h1>
+      <h2>Created By: Kyne Sia</h2>
+      <!-- <button type="button" id="reset">Reset Game</button> -->
+      <hr id="top-line">
+  
+      <div class="header-container">
+        <div class="score-container">
+          <div class="score-label">
+            Score
+          </div>
+          <div id="score">
+            0
+          </div>
+        </div>
+        <div class="share-button-container">
+          <div class="share-label">
+            Share:
+          </div>
+          <div class="share-icons">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=[deployment-link]" target="_blank">
+              <img src="./images/share_2048-fb.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+  
+      <div id="board">
+        <!-- First Row -->
+        <!-- <div class="x2 tile">[r0, c0]</div>
+        <div class="x4 tile">[r0, c1]</div>
+        <div class="x8 tile">[r0, c2]</div>
+        <div class="x16 tile">[r0, c3]</div> -->
+  
+        <!-- Second Row -->
+        <!-- <div class="x32 tile">[r1, c0]</div>
+        <div class="x64 tile">[r1, c1]</div>
+        <div class="x128 tile">[r1, c2]</div>
+        <div class="x256 tile">[r1, c3]</div> -->
+  
+        <!-- Third Row -->
+        <!-- <div class="x512 tile">[r2, c0]</div>
+        <div class="x1024 tile">[r2, c1]</div>
+        <div class="x2048 tile">[r2, c2]</div>
+        <div class="x4096 tile">[r2, c3]</div> -->
+  
+        <!-- Fourth Row -->
+        <!-- <div class="x8192 tile">[r3, c0]</div>
+        <div class="tile">[r3, c1]</div>
+        <div class="tile">[r3, c2]</div>
+        <div class="tile">[r3, c3]</div> -->
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://zuitt.co/?referral=2402-org-ali" target="blank">
+        <i class="fa-solid fa-globe"></i>
+      </a>
+      <a href="https://www.facebook.com/zuitttechcareer" target="blank">
+          <i class="fa-brands fa-facebook"></i>
+      </a>
+      <a href="https://x.com/zuittco" target="blank">
+          <i class="fa-brands fa-x-twitter"></i>
+      </a>
+      <a href="https://www.instagram.com/zuitt_co/" target="blank">
+          <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://www.tiktok.com/@zuittco" target="blank">
+          <i class="fa-brands fa-tiktok"></i>
+      </a>
+      <a href="https://www.youtube.com/@ZuittCo" target="blank">
+          <i class="fa-brands fa-youtube"></i>
+      </a>
+    </footer>
+
+    <!-- Script of the game -->
+    <script type="text/javascript" src="./logic.js"></script>
+    <script src="https://kit.fontawesome.com/f5e9dbf8b8.js" crossorigin="anonymous"></script>
+  </body>
+</html>
